@@ -8,7 +8,7 @@ embeddings = HuggingFaceEmbeddings(
 text_splitter = SemanticChunker(
     embeddings,
     breakpoint_threshold_type="standard_deviation",
-    breakpoint_threshold_amount=3
+    breakpoint_threshold_amount=1
 )
 
 sample = """
